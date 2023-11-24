@@ -20,9 +20,11 @@ export default function RootLayout({
 		<html lang='en' suppressHydrationWarning>
 			<body className={inter.className}>
 				<ThemeProviderContext>
-					<ThemeControl />
-					<main className='min-h-[100dvh] text-black bg-white dark:text-white dark:bg-black w-full flex mt-4 mx-auto items-center justify-center'>
-						{children}
+					<main className='relative flex items-center justify-center w-full min-h-screen mx-auto text-black bg-white dark:text-white dark:bg-black'>
+						<div>
+							<ThemeControl />
+						</div>
+						<section>{children}</section>
 					</main>
 				</ThemeProviderContext>
 			</body>

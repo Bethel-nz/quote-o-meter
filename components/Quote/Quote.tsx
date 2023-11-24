@@ -42,7 +42,7 @@ export default function Quote(randomQuote: Quote) {
 							Category: {randomQuote.category}
 						</p>
 
-						<div className='mt-24 grow'>
+						<div className='mt-24 grow max:w-96'>
 							<p
 								className={`text-5xl text-center max-w-3xl leading-normal ${roboto.className}`}
 							>
