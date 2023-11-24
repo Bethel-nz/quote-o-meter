@@ -20,8 +20,8 @@ export default function RootLayout({
 		<html lang='en' suppressHydrationWarning>
 			<body className={inter.className}>
 				<ThemeProviderContext>
+					<ThemeControl />
 					<main className='min-h-[100dvh] text-black bg-white dark:text-white dark:bg-black w-full flex mt-4 mx-auto items-center justify-center'>
-						<ThemeControl />
 						{children}
 					</main>
 				</ThemeProviderContext>
