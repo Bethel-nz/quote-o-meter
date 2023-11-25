@@ -24,7 +24,7 @@ export default function Quote(randomQuote: Quote) {
 	const [fade, setFade] = useState(false);
 
 	return (
-		<section className={`flex flex-col justify-center items-center mx-4`}>
+		<section className={`min-h-screen mt-4 flex flex-col justify-center items-center mx-4`}>
 			<div className='flex flex-col items-center justify-center'>
 				<AnimatePresence mode='wait'>
 					<motion.div
